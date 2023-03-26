@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Entitas;
 using UnityEngine;
 
-public class HealthComponent : IComponent
+public sealed class HealthComponent : IComponent
 {
     public float value;
 }
