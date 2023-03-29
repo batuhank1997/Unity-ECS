@@ -13,3 +13,5 @@ MonoBehaviour:
   m_Name: GameConfig
   m_EditorClassIdentifier: 
   player: {fileID: 1636767863780796987, guid: 28cd0aaf84a754943a01ea6f8094dfcd, type: 3}
+  moveSpeed: 10
+  rotationSpeed: 100

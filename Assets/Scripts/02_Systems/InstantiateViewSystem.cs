@@ -30,6 +30,11 @@ public class InstantiateViewSystem : ReactiveSystem<GameEntity>
             var go = Object.Instantiate(e.resource.prefab);
             e.AddView(go);
             go.Link(e);
+            
+            if (e.hasInitialPosition)
+            {
+                go.transform.position = e.ınitialPosition.value;
+            }
         }
     }
 }

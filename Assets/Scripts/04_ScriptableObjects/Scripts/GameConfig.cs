@@ -7,4 +7,6 @@ using UnityEngine;
 public class GameConfig : ScriptableObject
 {
     public GameObject player;
+    public float moveSpeed;
+    public float rotationSpeed;
 }
