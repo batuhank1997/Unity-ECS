@@ -21,3 +21,5 @@ MonoBehaviour:
   - {fileID: 8281724548190142355, guid: e95d63e9139ee3b458d9a4a762f9b743, type: 3}
   - {fileID: 8281724548190142355, guid: d87c830a46c85704088c74dd81a0ea51, type: 3}
   - {fileID: 8281724548190142355, guid: 1b8b5790a2421a944b467b98db038270, type: 3}
+  enemyMoveSpeed: 2
+  enemyRotationSpeed: 10
