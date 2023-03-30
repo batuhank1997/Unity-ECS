@@ -5,20 +5,20 @@ using UnityEngine;
 
 public class InitializeEnemiesSystem : IInitializeSystem
 {
-    private Contexts _contexs;
+    private Contexts _contexts;
 
     public InitializeEnemiesSystem(Contexts contexts)
     {
-        _contexs = contexts;
+        _contexts = contexts;
     }
 
     public void Initialize()
     {
-        var gameConfig = _contexs.game.gameConfig.value;
+        var gameConfig = _contexts.game.gameConfig.value;
         
         for (int i = 0; i < 10; i++)
         {
-            var entity = _contexs.game.CreateEntity();
+            var entity = _contexts.game.CreateEntity();
             
             entity.AddEnemy(3);
             entity.AddInitialPosition(new Vector3(Random.Range(-3f, 3f), Random.Range(2, 6f), 0f));

@@ -18,5 +18,7 @@ public class GameSystems : Feature
         
         Add(new RotatePlayerSystem(contexts));
         Add(new TranslatePlayerSystem(contexts));
+        Add(new EnemyStayInBoundsSystem(contexts));
+        
     }
 }
