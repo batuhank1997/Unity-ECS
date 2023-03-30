@@ -6,6 +6,8 @@ public class GameSystems : Feature
     {
         Add(new HelloWorldSystem());
         Add(new InputSystem(contexts));
+        Add(new MoveSystem(contexts));
+        Add(new ShootSystem(contexts));
         Add(new InitializePlayerSystem(contexts));
         Add(new InstantiateViewSystem(contexts));
         Add(new RotatePlayerSystem(contexts));
