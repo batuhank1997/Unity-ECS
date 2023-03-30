@@ -9,24 +9,28 @@
 public static class GameComponentsLookup {
 
     public const int Acceleration = 0;
-    public const int GameConfig = 1;
-    public const int InitialPosition = 2;
-    public const int Input = 3;
-    public const int Player = 4;
-    public const int Position = 5;
-    public const int Resource = 6;
-    public const int RotatePlayerSystem = 7;
-    public const int ShootSystem = 8;
-    public const int TranslatePlayerSystem = 9;
-    public const int View = 10;
+    public const int Enemy = 1;
+    public const int GameConfig = 2;
+    public const int InitialPosition = 3;
+    public const int Input = 4;
+    public const int MoveSystem = 5;
+    public const int Player = 6;
+    public const int Position = 7;
+    public const int Resource = 8;
+    public const int RotatePlayerSystem = 9;
+    public const int ShootSystem = 10;
+    public const int TranslatePlayerSystem = 11;
+    public const int View = 12;
 
-    public const int TotalComponents = 11;
+    public const int TotalComponents = 13;
 
     public static readonly string[] componentNames = {
         "Acceleration",
+        "Enemy",
         "GameConfig",
         "InitialPosition",
         "Input",
+        "MoveSystem",
         "Player",
         "Position",
         "Resource",
@@ -38,9 +42,11 @@ public static class GameComponentsLookup {
 
     public static readonly System.Type[] componentTypes = {
         typeof(AccelerationComponent),
+        typeof(EnemyComponent),
         typeof(GameConfigComponent),
         typeof(InitialPositionComponent),
         typeof(InputComponent),
+        typeof(MoveSystemComponent),
         typeof(PlayerComponent),
         typeof(PositionComponent),
         typeof(ResourceComponent),
