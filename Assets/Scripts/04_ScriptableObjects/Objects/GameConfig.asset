@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1636767863780796987, guid: 28cd0aaf84a754943a01ea6f8094dfcd, type: 3}
   projectile: {fileID: 6755546170366879528, guid: 09d95737ea3ebdd48a0723c55c62c8af, type: 3}
-  projectileSpeed: 50
+  projectileSpeed: 30
   moveSpeed: 10
   rotationSpeed: 100
   enemies:

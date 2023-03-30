@@ -14,11 +14,13 @@ public class GameSystems : Feature
         Add(new MoveSystem(contexts));
         
         Add(new MapEnemyLevelToResourceSystem(contexts));
+        Add(new HitEnemySystem(contexts));
         Add(new InstantiateViewSystem(contexts));
         
         Add(new RotatePlayerSystem(contexts));
         Add(new TranslatePlayerSystem(contexts));
         Add(new EnemyStayInBoundsSystem(contexts));
         
+        Add(new DestroySystem(contexts));
     }
 }

@@ -22,7 +22,7 @@ public class InitializeEnemiesSystem : IInitializeSystem
             
             entity.AddEnemy(3);
             entity.AddInitialPosition(new Vector3(Random.Range(-3f, 3f), Random.Range(2, 6f), 0f));
-            entity.AddAcceleration(new Vector3(Random.Range(0, 360), Random.Range(0, 360), Random.Range(0, 360)).normalized * gameConfig.enemyMoveSpeed);
+            entity.AddAcceleration(new Vector3(Random.Range(0, 360), Random.Range(0, 360), 0f).normalized * gameConfig.enemyMoveSpeed);
         }
     }
 }
